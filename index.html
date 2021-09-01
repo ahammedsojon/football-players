@@ -12,36 +12,38 @@
 </head>
 
 <body>
-    <h1 class="text-center text-success my-5">Search Your Favourite Football Player</h1>
-    <div class="container">
+    <main class="mb-5">
+        <h1 class="text-center text-success my-5">Search Your Favourite Football Player</h1>
+        <div class="container">
 
-        <!-- search area -->
-        <div class="row">
-            <div class="input-group mb-3 w-50 mx-auto">
-                <input id="search-field" type="text" class="form-control" placeholder="search your favourite player"
-                    aria-label="" aria-describedby="button-addon2">
-                <button onclick="searchPlayer()" class="btn btn-outline-success" type="button"
-                    id="button-addon2">Search</button>
+            <!-- search area -->
+            <div class="row">
+                <div class="input-group mb-3 w-50 mx-auto">
+                    <input id="search-field" type="text" class="form-control" placeholder="search your favourite player"
+                        aria-label="" aria-describedby="button-addon2">
+                    <button onclick="searchPlayer()" class="btn btn-outline-success" type="button"
+                        id="button-addon2">Search</button>
+                </div>
             </div>
-        </div>
 
-        <!-- spinners -->
-        <div id="spinners" class="text-center mb-3 d-none">
-            <div class="spinner-border" role="status">
-                <span class="visually-hidden"></span>
+            <!-- spinners -->
+            <div id="spinners" class="text-center mb-3 d-none">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden"></span>
+                </div>
             </div>
+
+            <!-- player details -->
+            <div id="player-details" class="w-50 mx-auto mb-5">
+
+            </div>
+
+            <!-- search result -->
+            <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
+            </div>
+
         </div>
-
-        <!-- player details -->
-        <div id="player-details" class="w-50 mx-auto mb-5">
-
-        </div>
-
-        <!-- search result -->
-        <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4">
-
-        </div>
-    </div>
+    </main>
     <script src="js/sportsdb-player.js"></script>
 </body>
 

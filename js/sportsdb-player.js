@@ -40,7 +40,7 @@ const displaySearchPlayer = players => {
             <img src="${player.strThumb ? player.strThumb : ''}" class="card-img-top" alt="">
             <div class="card-body">
                 <h5 class="card-title">${player.strPlayer}</h5>
-                <button class="btn btn-outline-success" onclick="loadPlayerDetails(${player.idPlayer})" href="#" class="btn btn-primary">Player details</button>
+                <button onclick="loadPlayerDetails(${player.idPlayer})" href="#" class="btn btn-outline-primary">Player details</button>
             </div >
         </div >
             `;
